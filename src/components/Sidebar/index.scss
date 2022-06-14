@@ -1,0 +1,125 @@
+.nav-bar {
+  background-color: #181818;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    display: block;
+    padding: 8px 0px;
+
+    img {
+      display: block;
+      width: 24px;
+      margin: 8px auto;
+      height: auto;
+
+      &.sub-logo {
+        width: 50px;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      font-size: 22px;
+      height: 51px;
+      line-height: 51px;
+      position: relative;
+      text-decoration: none;
+      color: #4d4d4e;
+
+      i {
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        opacity: 0;
+      }
+
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &::after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &::after {
+        content: 'CONTENT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+
+        &:hover svg {
+          color: #ffd700;
+        }
+      }
+    }
+  }
+}
