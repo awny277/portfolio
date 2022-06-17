@@ -6,7 +6,7 @@
 
 .top-tag {
   bottom: auto;
-  top: 35;
+  top: 35px;
 }
 
 .tags {
@@ -16,8 +16,25 @@
   position: absolute;
   left: 120px;
   font-size: 18px;
-  font-family: 'La Belle  Aurore';
+  font-family: 'La Belle Aurore', cursive;
 }
 
 .bottom-tag-html {
+  margin-left: -20px;
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 }
