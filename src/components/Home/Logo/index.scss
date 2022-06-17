@@ -1,0 +1,40 @@
+.logo-container {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  z-index: 0;
+  width: 400px;
+  height: 609px;
+  left: auto;
+  margin: auto;
+
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg) !important;
+    -webkit-transform: rotateZ(30deg) !important;
+    -moz-transform: rotateZ(30deg) !important;
+    -ms-transform: rotateZ(30deg) !important;
+    -o-transform: rotateZ(30deg) !important;
+  }
+
+  .solid-logo {
+    width: 100%;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    transform: rotateZ(30deg);
+    -webkit-transform: rotateZ(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    -o-transform: rotateZ(30deg);
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s 3s forwards;
+    -webkit-animation: fadeIn 1s 3s forwards;
+  }
+}

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
-import './index.scss'
+import LogoTitle from '../../assets/images/test4.png'
 import AnimatedLetters from './../AnimatedLetters/index'
+import Logo from './Logo'
+import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -56,6 +57,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }
