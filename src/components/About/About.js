@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Hello World</title>
+        <title>About World</title>
         <link rel="canonical" href="https://www.tacobell.com/" />
       </Helmet>
       Hello from About
